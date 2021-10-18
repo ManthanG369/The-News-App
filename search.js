@@ -45,6 +45,11 @@ function showNews(news){
                  let img=document.createElement("img")
                  img.src=news.urlToImage
 
+                 master_div.onclick=function(){
+                        window.location.href="../CodingEvalution/news.html"
+                        clicked_news(news)
+                }
+
                  head_div.append(headlines,author,publish)
 
                  dis_div.append(des)
@@ -53,4 +58,17 @@ function showNews(news){
                 master_div.append(head_div,dis_div,img_div)
                 container.append(master_div)
         });
+}
+
+
+function clicked_news(news){
+      
+        if (localStorage.getItem("clicked_News")===null){
+             localStorage.setItem("clicked_News",JSON.stringify([]));   
+        }
+        let data=JSON.parse(localStorage.getItem("clicked_News"));
+          data[0]=news;
+          localStorage.setItem("clicked_News",JSON.stringify(data))
+
+        //   window.location.href="..\CodingEvalution\search.html"
 }

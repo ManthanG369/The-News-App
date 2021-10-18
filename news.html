@@ -5,8 +5,78 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>News</title>
+        <style>
+  *{
+                        margin: 0;
+                        padding: 0;
+                        text-decoration: none;
+                        font-family: "Arial";
+                }
+                nav{
+                        background-color: black;
+                        display: flex;
+                        height: 100px;
+                        padding: 10px;
+                        line-height: 80px;
+                        justify-content: space-between;
+                        box-sizing: border-box;
+                        
+                }
+
+              #about{
+                      width: 30%;
+                        display: flex; 
+                        justify-content: space-between; 
+                }
+
+                nav a{
+                        color: white;
+                        font-size: 25px;
+                }
+
+
+                #mynews{
+                width: 70%;
+                margin: 100px auto;
+                
+        }
+        .News_cont{
+                display: flex;
+                flex-direction: column;
+                border: 2px solid #BDBDBD;
+                margin: 10px;
+                border-radius: 20px;
+                cursor: pointer;
+        }
+        .News_cont img{
+                width:70%;
+        }
+        .News_cont div{
+                /* width:30%; */
+                margin:1%;
+                /* border: 2px solid #BDBDBD; */
+        }
+
+        .News_cont div:nth-child(1){
+                /* border: 1px solid red; */
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+        }
+        </style>
 </head>
 <body>
-        <h1>the news</h1>
+        <nav>
+                <div><a href="..\CodingEvalution\home.html">NEWSADDA</a></div>
+                <div id="about">
+                        <div><a href="..\CodingEvalution\search.html" target="blank">Search</a></div>
+                        <div><a href="#">About</a></div>
+                        <div><a href="#">Contact</a></div>
+                </div>
+                
+        </nav>
+
+        <div id="mynews"></div>
 </body>
+<script src="..\CodingEvalution\news.js"></script>
 </html>

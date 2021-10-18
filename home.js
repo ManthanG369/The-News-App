@@ -44,6 +44,7 @@ function showNews(news){
                  img.src=news.urlToImage
 
                  master_div.onclick=function(){
+                         window.location.href="../CodingEvalution/news.html"
                          clicked_news(news)
                  }
 
@@ -58,10 +59,7 @@ function showNews(news){
 }
 
 function clicked_news(news){
-        console.log("clicked_news" ,news)
-        alert("clicked")
-
-
+      
         if (localStorage.getItem("clicked_News")===null){
              localStorage.setItem("clicked_News",JSON.stringify([]));   
         }
@@ -69,5 +67,5 @@ function clicked_news(news){
           data[0]=news;
           localStorage.setItem("clicked_News",JSON.stringify(data))
 
-          window.location="..\news.html"
+        //   window.location.href="..\CodingEvalution\search.html"
 }
