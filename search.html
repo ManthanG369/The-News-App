@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>search</title>
+        <style>
+ *{
+                        margin: 0;
+                        padding: 0;
+                        text-decoration: none;
+                        font-family: "Arial";
+                }
+                nav{
+                        background-color: black;
+                        display: flex;
+                        height: 100px;
+                        padding: 10px;
+                        line-height: 80px;
+                        justify-content: space-between;
+                        box-sizing: border-box;
+                        
+                }
+
+              #about{
+                      width: 30%;
+                        display: flex; 
+                        justify-content: space-between; 
+                }
+
+                nav a{
+                        color: white;
+                        font-size: 25px;
+                }
+
+                .search_bar{
+                        margin:100px auto;
+                        display:flex;
+
+                }
+                .search_bar div{
+                        margin: auto;
+                }
+
+                #search{
+                        width:400px;
+                        height: 50px;
+                        border-radius: 50px;
+                        font-size: 20px;
+                        
+                }
+                .search_bar button{
+                        height: 50px;
+                        width: 90px;
+                        border-radius: 50px;
+                        padding: 10px 10px;
+                        box-sizing: border-box;
+                        font-size: 20px;
+                }
+
+
+                #mynews{
+                width: 70%;
+                margin: 100px auto;
+                
+        }
+        .News_cont{
+                display: flex;
+                border: 2px solid #BDBDBD;
+                margin: 10px;
+                border-radius: 20px;
+        }
+        .News_cont img{
+                width:100%;
+        }
+        .News_cont div{
+                width:30%;
+                margin:1%;
+                /* border: 2px solid #BDBDBD; */
+        }
+
+        .News_cont div:nth-child(1){
+                /* border: 1px solid red; */
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+        }       
+        </style>
+</head>
+<body>
+        <nav>
+                <div><a href="#">NEWSADDA</a></div>
+                <div id="about">
+                        <div><a href="..\CodingEvalution\search.html" target="blank">Search</a></div>
+                        <div><a href="#">About</a></div>
+                        <div><a href="#">Contact</a></div>
+                </div>
+                
+        </nav>
+
+
+        <div class="search_bar">
+                <div class="search">
+                        <input id=search type="search">
+                        <button onclick="SearchNews()">Search</button>
+                </div>
+              
+        </div>
+
+        <div id="mynews"></div>
+</body>
+<script src="..\CodingEvalution\search.js"></script>
+</html>
